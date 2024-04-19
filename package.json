@@ -21,7 +21,7 @@
   ],
   "keywords": [
     "chatgpt",
-    "lambda",
+    "lamda",
     "bard",
     "gpt",
     "gpt3",
@@ -153,66 +153,6 @@
         "key": "ctrl+k ctrl+shift+9",
         "mac": "cmd+k cmd+shift+9",
         "when": "editorHasSelection"
-      }
-    ],
-    "commands": [
-      {
-        "command": "chatgpt-copilot.freeText",
-        "title": "ChatGPT: Ask anything"
-      },
-      {
-        "command": "chatgpt-copilot.clearSession",
-        "title": "ChatGPT: Reset session"
-      },
-      {
-        "command": "chatgpt-copilot.generateCode",
-        "title": "ChatGPT-Codex: Generate code",
-        "enablement": "editorHasSelection"
-      },
-      {
-        "command": "chatgpt-copilot.addTests",
-        "title": "ChatGPT: Add tests",
-        "enablement": "editorHasSelection"
-      },
-      {
-        "command": "chatgpt-copilot.findProblems",
-        "title": "ChatGPT: Find bugs",
-        "enablement": "editorHasSelection"
-      },
-      {
-        "command": "chatgpt-copilot.optimize",
-        "title": "ChatGPT: Optimize",
-        "enablement": "editorHasSelection"
-      },
-      {
-        "command": "chatgpt-copilot.explain",
-        "title": "ChatGPT: Explain",
-        "enablement": "editorHasSelection"
-      },
-      {
-        "command": "chatgpt-copilot.addComments",
-        "title": "ChatGPT: Add comments",
-        "enablement": "editorHasSelection"
-      },
-      {
-        "command": "chatgpt-copilot.completeCode",
-        "title": "ChatGPT: Complete code",
-        "enablement": "editorHasSelection"
-      },
-      {
-        "command": "chatgpt-copilot.adhoc",
-        "title": "ChatGPT: Ad-hoc",
-        "enablement": "editorHasSelection"
-      },
-      {
-        "command": "chatgpt-copilot.customPrompt1",
-        "title": "ChatGPT: Custom prompt 1",
-        "enablement": "editorHasSelection"
-      },
-      {
-        "command": "chatgpt-copilot.customPrompt2",
-        "title": "ChatGPT: Custom prompt 2",
-        "enablement": "editorHasSelection"
       }
     ]
   }
