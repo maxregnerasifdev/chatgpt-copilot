@@ -243,7 +243,6 @@
   },
   "dependencies": {
     "fs-extra": "^10.0.0",
-    "prerun-script": "^1.2.0",
     "vscode": "^1.5.0"
   },
   "browserslist": [
