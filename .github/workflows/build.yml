@@ -24,4 +24,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: chatgpt-copilot-4.4.1.vsix
-        path: D:\a\chatgpt-copilot\chatgpt-copilot
+        path: D:\a\chatgpt-copilot\chatgpt-copilot\chatgpt-copilot-4.4.1.vsix
