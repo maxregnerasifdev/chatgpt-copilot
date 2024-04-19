@@ -9,10 +9,7 @@ on:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        os: [macos-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: windows-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -23,8 +20,8 @@ jobs:
     - run: npm install
     - run: npm run build
     - run: npm run package
-    - name: Upload build files
+    - name: Upload VSIX artifact
       uses: actions/upload-artifact@v2
       with:
-        name: build-files
-        path: /Users/runner/work/chatgpt-copilot/chatgpt-copilot/
+        name: chatgpt-copilot-4.4.1.vsix
+        path: D:\a\chatgpt-copilot\chatgpt-copilot
