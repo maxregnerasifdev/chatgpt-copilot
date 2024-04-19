@@ -154,6 +154,101 @@
         "mac": "cmd+k cmd+shift+9",
         "when": "editorHasSelection"
       }
+    ],
+    "commands": [
+      {
+        "command": "chatgpt-copilot.freeText",
+        "title": "ChatGPT: Ask anything"
+      },
+      {
+        "command": "chatgpt-copilot.clearSession",
+        "title": "ChatGPT: Reset session"
+      },
+      {
+        "command": "chatgpt-copilot.generateCode",
+        "title": "ChatGPT-Codex: Generate code",
+        "enablement": "editorHasSelection"
+      },
+      {
+        "command": "chatgpt-copilot.addTests",
+        "title": "ChatGPT: Add tests",
+        "enablement": "editorHasSelection"
+      },
+      {
+        "command": "chatgpt-copilot.findProblems",
+        "title": "ChatGPT: Find bugs",
+        "enablement": "editorHasSelection"
+      },
+      {
+        "command": "chatgpt-copilot.optimize",
+        "title": "ChatGPT: Optimize",
+        "enablement": "editorHasSelection"
+      },
+      {
+        "command": "chatgpt-copilot.explain",
+        "title": "ChatGPT: Explain",
+        "enablement": "editorHasSelection"
+      },
+      {
+        "command": "chatgpt-copilot.addComments",
+        "title": "ChatGPT: Add comments",
+        "enablement": "editorHasSelection"
+      },
+      {
+        "command": "chatgpt-copilot.completeCode",
+        "title": "ChatGPT: Complete code",
+        "enablement": "editorHasSelection"
+      },
+      {
+        "command": "chatgpt-copilot.adhoc",
+        "title": "ChatGPT: Ad-hoc",
+        "enablement": "editorHasSelection"
+      },
+      {
+        "command": "chatgpt-copilot.customPrompt1",
+        "title": "ChatGPT: Custom prompt 1",
+        "enablement": "editorHasSelection"
+      },
+      {
+        "command": "chatgpt-copilot.customPrompt2",
+        "title": "ChatGPT: Custom prompt 2",
+        "enablement": "editorHasSelection"
+      }
     ]
-  }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "node ./out/test/runTest.js",
+    "build": "rm -rfv ./out/ && tsc -p ./",
+    "postinstall": "node ./out/postinstall.js",
+    "start": "tsc-watch --onSuccess \"node ./out/extension.js\""
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.6",
+    "@types/node": "^14.14.35",
+    "@types/vscode": "^1.56.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.31.0",
+    "glob": "^7.1.7",
+    "mocha": "^9.1.3",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "vscode-test": "^1.6.0",
+    "tsc-watch": "^4.1.0"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "prerun-script": "^1.2.0",
+    "vscode": "^1.5.0"
+  },
+  "browserslist": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
 }
