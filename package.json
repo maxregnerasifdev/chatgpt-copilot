@@ -226,28 +226,51 @@
     "start": "tsc-watch --onSuccess \"node ./out/extension.js\""
   },
   "devDependencies": {
-    "@types/glob": "^7.1.3",
-    "@types/mocha": "^8.0.6",
-    "@types/node": "^14.14.35",
-    "@types/vscode": "^1.56.0",
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
-    "@typescript-eslint/parser": "^4.29.0",
-    "eslint": "^7.31.0",
-    "glob": "^7.1.7",
-    "mocha": "^9.1.3",
-    "nyc": "^15.1.0",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.3.5",
-    "vscode-test": "^1.6.0",
-    "tsc-watch": "^4.1.0"
+    "@types/glob": "^8.1.0",
+    "@types/isomorphic-fetch": "^0.0.39",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.12.5",
+    "@types/uuid": "^9.0.8",
+    "@types/vscode": "^1.85.0",
+    "@types/vscode-webview": "^1.57.5",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "@vscode/test-electron": "^2.3.9",
+    "@vscode/vsce": "^2.24.0",
+    "esbuild": "^0.20.1",
+    "eslint": "^8.56.0",
+    "glob": "^10.3.10",
+    "mocha": "^10.3.0",
+    "prettier": "^3.2.5",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3"
   },
   "dependencies": {
-    "fs-extra": "^10.0.0",
-    "vscode": "^1.5.0"
+    "@langchain/anthropic": "^0.1.10",
+    "@types/minimatch": "^5.1.2",
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
+    "delay": "^6.0.0",
+    "eventsource-parser": "^1.1.2",
+    "gpt3-tokenizer": "^1.1.5",
+    "isomorphic-fetch": "^3.0.0",
+    "keyv": "^4.5.4",
+    "langchain": "^0.1.31",
+    "minimatch": "^5.1.6",
+    "openai": "^4.28.0",
+    "p-timeout": "^6.1.2",
+    "puppeteer": "^19.11.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "puppeteer-extra-plugin-user-data-dir": "^2.4.1",
+    "puppeteer-extra-plugin-user-preferences": "^2.4.1",
+    "quick-lru": "^7.0.0",
+    "remark": "^15.0.1",
+    "strip-markdown": "^6.0.0",
+    "uuid": "^9.0.1"
   },
-  "browserslist": [
-    "last 1 chrome version",
-    "last 1 firefox version",
-    "last 1 safari version"
-  ]
+  "resolutions": {
+    "clone-deep": "^4.0.1"
+  }
 }
