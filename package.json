@@ -216,14 +216,16 @@
       }
     ]
   },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "test": "node ./out/test/runTest.js",
-    "build": "rm -rfv ./out/ && tsc -p ./",
-    "postinstall": "node ./out/postinstall.js",
-    "start": "tsc-watch --onSuccess \"node ./out/extension.js\""
+   "scripts": {
+    "vscode:prepublish": "rimraf out && yarn run esbuild-base --minify",
+    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/extension.js --external:vscode --format=cjs --platform=node",
+    "build": "yarn run -S esbuild-base --sourcemap",
+    "watch": "yarn run -S esbuild-base --sourcemap --watch",
+    "fmt": "prettier --write \"src/**/*.ts\"&& yarn run test",
+    "update": "npm install -g npm-check-updates && ncu -u && npm install",
+    "test": "eslint src --ext ts && tsc --noEmit",
+    "package": "vsce package --yarn",
+    "publish": "vsce publish --yarn"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
